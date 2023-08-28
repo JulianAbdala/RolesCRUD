@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DKtest.props" />
+</Project>

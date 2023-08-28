@@ -1,0 +1,112 @@
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\appsettings.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\DKtest.staticwebassets.runtime.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\DKtest.exe
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\DKtest.deps.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\DKtest.runtimeconfig.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\DKtest.pdb
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.AssemblyInfoInputs.cache
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.AssemblyInfo.cs
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.csproj.CoreCompileInputs.cache
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.RazorAssemblyInfo.cache
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.RazorAssemblyInfo.cs
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets\msbuild.DKtest.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets\msbuild.build.DKtest.props
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DKtest.props
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DKtest.props
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\scopedcss\bundle\DKtest.styles.css
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\refint\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.pdb
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.genruntimeconfig.cache
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\ref\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.csproj.AssemblyReference.cache
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\DKtest.csproj.CopyComplete
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\j.abdala\Documents\Proyecto\DKtest\obj\Debug\net7.0\scopedcss\projectbundle\DKtest.bundle.scp.css
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\appsettings.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKtest.staticwebassets.runtime.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKtest.exe
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKtest.deps.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKtest.runtimeconfig.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKtest.pdb
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.csproj.AssemblyReference.cache
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.AssemblyInfoInputs.cache
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.AssemblyInfo.cs
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.csproj.CoreCompileInputs.cache
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.RazorAssemblyInfo.cache
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.RazorAssemblyInfo.cs
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets\msbuild.DKtest.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets\msbuild.build.DKtest.props
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DKtest.props
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DKtest.props
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\scopedcss\bundle\DKtest.styles.css
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\scopedcss\projectbundle\DKtest.bundle.scp.css
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.csproj.CopyComplete
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\refint\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.pdb
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\DKtest.genruntimeconfig.cache
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\obj\Debug\net7.0\ref\DKtest.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\DKbase.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\AdminValidationAjax\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

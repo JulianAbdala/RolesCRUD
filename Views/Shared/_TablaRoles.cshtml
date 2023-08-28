@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Código de Rol</th>
+        <th>Nombre de Rol</th>
+    </tr>
+    @foreach (var rol in Model)
+    {
+        <tr>
+            <td>@rol.rol_codRol</td>
+            <td>@rol.rol_Nombre</td>
+        </tr>
+    }
+</table>
