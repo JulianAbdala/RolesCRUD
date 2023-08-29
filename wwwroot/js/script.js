@@ -55,8 +55,17 @@ roles.forEach(function (rol) {
   var rolRow = $("<tr>");
   rolRow.append($("<td>").text(rol.rol_codRol));
   rolRow.append($("<td>").text(rol.rol_Nombre));
+//BOTON MODIFICAR (EN GRILLA)
+   var modifyButton = $("<button>").text("Modificar");
+   modifyButton.click(function () {
+     $('#idrol').val(rol.rol_codRol); 
+   });
+   
+   var buttonCell = $("<td>").append(modifyButton);
+   rolRow.append(buttonCell);
   table.append(rolRow);
 });
+
 
 rolesContainer.append(table);
 });

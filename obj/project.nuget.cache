@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6It3+b8LjkSi7OzaHCJLs/NW5S87u02ds7KBcC3P6wuyyyk7HCJYBjFhjQsKLqQj8TQ1HXwfYgNhLjIWJs2slw==",
+  "dgSpecHash": "mH7Bkb5HaRGUNIg44ClXHhWVXEjEWJgeoXTraC+DQ23uj89YrLF6Cao2un/rmj4swTHnCZj4OMHZMUkR4s6oZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\AdminValidationAjax\\DKtest.csproj",
+  "projectFilePath": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\DKtest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j.abdala\\.nuget\\packages\\documentformat.openxml\\2.20.0\\documentformat.openxml.2.20.0.nupkg.sha512",
     "C:\\Users\\j.abdala\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

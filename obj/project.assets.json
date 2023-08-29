@@ -5575,11 +5575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\AdminValidationAjax\\DKtest.csproj",
+      "projectUniqueName": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\DKtest.csproj",
       "projectName": "DKtest",
-      "projectPath": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\AdminValidationAjax\\DKtest.csproj",
+      "projectPath": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\DKtest.csproj",
       "packagesPath": "C:\\Users\\j.abdala\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\AdminValidationAjax\\obj\\",
+      "outputPath": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
