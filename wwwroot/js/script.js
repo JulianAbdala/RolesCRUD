@@ -40,12 +40,13 @@ $(document).ready(function () {
   });
 });
 
-//Grilla con paginacion
+//Grilla con paginacion y filtro
 
 $(document).ready(function () {
   var rolesContainer = $("#rolesContainer");
   var rolesPerPage = 5;
   var currentPage = 1;
+  var filteredRoles = null; // Variable para almacenar los roles filtrados
 
   var table = $("<table>");
   var headerRow = $("<tr>");
@@ -70,11 +71,43 @@ $(document).ready(function () {
 
   rolesContainer.append(table);
 
+  //Input y boton de busqueda
+  var searchInput = $("<input>").attr("type", "text").attr("placeholder", "Buscar por nombre");
+  var searchButton = $("<button>").text("Buscar");
+  var searchContainer = $("<div>").addClass("search-container").append(searchInput, searchButton);
+
+  rolesContainer.before(searchContainer);
+
+  //funcion boton de busqueda
+  searchButton.click(function () {
+    var searchTerm = searchInput.val().toLowerCase();
+    filteredRoles = roles.filter(function (rol) {
+      return rol.rol_Nombre.toLowerCase().includes(searchTerm);
+    });
+
+    updatePagination(filteredRoles);
+    displayRolesSearch(0, rolesPerPage);
+  });
+
+  searchInput.keyup(function(event) {
+    if (event.keyCode === 13 /*enter*/) {
+      searchButton.click();
+    }
+  });
+
   function displayRoles(startIndex, endIndex) {
     table.find("tr.role-row").hide();
     table.find("tr.role-row").slice(startIndex, endIndex).show();
   }
-
+  //display de la busqueda
+  function displayRolesSearch(startIndex, endIndex) {
+    table.find("tr.role-row").hide();
+    var rolesToDisplay = filteredRoles || roles;
+    rolesToDisplay.slice(startIndex, endIndex).forEach(function (rol) {
+      $("tr.role-row:contains('" + rol.rol_Nombre + "')").show();
+    });
+  }
+  //actualiza la paginacion
   function updatePagination() {
     var totalRoles = roles.length;
     var totalPages = Math.ceil(totalRoles / rolesPerPage);
@@ -87,7 +120,9 @@ $(document).ready(function () {
       pagination.empty();
     }
 
+    //botones de paginacion
     var prevButton = $("<span>").addClass("arrow-button prev").text("◀");
+    prevButton.addClass("pointer");
     prevButton.click(function () {
       if (currentPage > 1) {
         currentPage--;
@@ -127,13 +162,14 @@ $(document).ready(function () {
         updatePagination();
       }
     });
-
+    
     pagination.append(nextButton);
   }
-
-  displayRoles(0, rolesPerPage);
+  
   updatePagination();
+  displayRoles(0, rolesPerPage);
 });
+
 
 //Boton ATRÁS
 document.getElementById("volverAtras").addEventListener("click", function () {

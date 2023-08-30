@@ -55,10 +55,10 @@ namespace LoginAdmin.Controllers
 //CREAR ROL
         
         [HttpGet("/admin/home/createrol")]
-
         public IActionResult CrearRolPage(){                
             return View("CrearRol"); 
         }
+        
 
         [HttpPost("/admin/home/crearrol")]
         public IActionResult CrearRol(string rolName)
@@ -77,10 +77,10 @@ namespace LoginAdmin.Controllers
 
         }
 
-    public IActionResult ModificarUsuario(int idrol) {
-        ViewBag.IdRol = idrol;
-        return View();
-    }
+        public IActionResult ModificarUsuario(int idrol) {
+            ViewBag.IdRol = idrol;
+            return View();
+        }
 
 
 //Modificacion de ROLES
