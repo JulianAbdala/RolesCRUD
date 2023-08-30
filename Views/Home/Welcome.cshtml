@@ -48,7 +48,7 @@
         </ul>
         <form method="post" action="/logout">
             @Html.AntiForgeryToken()
-            <button type="submit" formaction="/admin">Cerrar sesión</button>
+            <button type="submit" formaction="/admin/lougout">Cerrar sesión</button>
         </form>
     </div>
 </div>
@@ -60,7 +60,7 @@
 </div>
 <h2>Rols</h2>
 
-<form  id="buscarForm" method="get" action="/welcome/buscarrol">
+<form  id="buscarForm" method="get" action="/admin/home/buscarrol/{nombre}">
     <label for="buscarId">Buscar Rol por ID:</label>
     <input type="text" id="buscarrol" name="nombre">
     <button type="submit">Buscar</button>
@@ -70,7 +70,7 @@
 <div id="rolesContainer"></div>
 
 <h2>Creacion de Usuario</h2>
-<form method="get" action="/createrol">
+<form method="get" action="/admin/home/createrol">
 <button type="submit" >crear rol</button>
 </form>
 
@@ -84,7 +84,7 @@
 
 <h2>Modificar nombre de Usuario</h2>
 
-    <form class="rol-form" method="post" action="/modificarrol">
+    <form class="rol-form" method="post" action="/admin/home/modificarrol">
         @Html.AntiForgeryToken()
         <div class="form-group">
             <label for="idrol">ID del Usuario:</label>

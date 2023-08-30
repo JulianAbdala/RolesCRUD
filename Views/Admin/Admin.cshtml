@@ -68,11 +68,11 @@
 
             $.ajax({
                 type: "POST",
-                url: "/login", // Cambia la URL a la acción de login
+                url: "/admin/login", // Cambia la URL a la acción de login
                 data: { usuario: usuario, contraseña: contraseña },
                 success: function (data) {
                     // Redirige a la vista "Welcome"
-                    window.location.href = "/welcome";
+                    window.location.href = "/admin/home";
                 },
                 error: function (xhr, status, error) {
                     var mensajeError = JSON.parse(xhr.responseText).message;

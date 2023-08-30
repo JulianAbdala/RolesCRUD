@@ -1,43 +1,43 @@
 //MODIFICAR ROL
-  
-$(document).ready(function() {
-  $('#modificarUsuarioBtn').click(function() {
-      const idrol = $('#idrol').val();
-      const newName = $('#newName').val();
-      
-      modificarUsuario(idrol, newName);
+
+$(document).ready(function () {
+  $("#modificarUsuarioBtn").click(function () {
+    const idrol = $("#idrol").val();
+    const newName = $("#newName").val();
+
+    modificarUsuario(idrol, newName);
   });
 });
 
 //BUSCAR ROL
 
 $(document).ready(function () {
-$('#buscarForm').submit(function (event) {
+  $("#buscarForm").submit(function (event) {
     event.preventDefault();
 
-    var nombre = $('#buscarrol').val(); 
+    var nombre = $("#buscarrol").val();
 
     $.ajax({
-        url: '/welcome/buscarrol/' + nombre,
-        type: 'GET',
-        success: function (data) {
-            $('#rolesContainer').html(data);
-        },
-        error: function (error) {
-            console.log(error);
-        }
+      url: "/admin/home/buscarrol/" + nombre,
+      type: "GET",
+      success: function (data) {
+        $("#rolesContainer").html(data);
+      },
+      error: function (error) {
+        console.log(error);
+      },
     });
-});
+  });
 });
 
 //CREAR ROL
 
-$(document).ready(function() {
-$('#crearRolBtn').click(function() {
-    const rolNombre = $('#rolName').val();
-    
+$(document).ready(function () {
+  $("#crearRolBtn").click(function () {
+    const rolNombre = $("#rolName").val();
+
     CrearRol(rolNombre);
-});
+  });
 });
 
 //Grilla con paginacion
@@ -60,9 +60,9 @@ $(document).ready(function () {
     rolRow.append($("<td>").text(rol.rol_Nombre));
     var modifyButton = $("<button>").text("Modificar");
     modifyButton.click(function () {
-      $('#idrol').val(rol.rol_codRol); 
+      $("#idrol").val(rol.rol_codRol);
     });
-    
+
     var buttonCell = $("<td>").append(modifyButton);
     rolRow.append(buttonCell);
     table.append(rolRow);
@@ -105,7 +105,7 @@ $(document).ready(function () {
       if (i === currentPage) {
         pageButton.addClass("active");
       }
-      pageButton.addClass("pointer"); 
+      pageButton.addClass("pointer");
       pageButton.click(function () {
         currentPage = parseInt($(this).text());
         var startIndex = (currentPage - 1) * rolesPerPage;
@@ -117,7 +117,7 @@ $(document).ready(function () {
     }
 
     var nextButton = $("<span>").addClass("arrow-button next").text("▶");
-    nextButton.addClass("pointer"); 
+    nextButton.addClass("pointer");
     nextButton.click(function () {
       if (currentPage < totalPages) {
         currentPage++;
@@ -136,6 +136,6 @@ $(document).ready(function () {
 });
 
 //Boton ATRÁS
-document.getElementById("volverAtras").addEventListener("click", function() {
-window.location.href = "welcome.cshtml";
+document.getElementById("volverAtras").addEventListener("click", function () {
+  window.location.href = "welcome.cshtml";
 });

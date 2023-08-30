@@ -31,7 +31,7 @@ namespace LoginAdmin.Controllers
             return View();
         }
 
-        [HttpPost("/login")]
+        [HttpPost("/admin/login")]
         public IActionResult Login(string usuario, string contraseña)
         {
             if (usuario == "admin" && contraseña == "admin12345") // Mientras no esté conectado con una db...
