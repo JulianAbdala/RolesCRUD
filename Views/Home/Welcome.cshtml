@@ -13,6 +13,27 @@
     
     <title>Vista Admin</title>
     <link rel="stylesheet" href="~/css/styles.css" />
+    <style> 
+        .page-number.active {
+            text-decoration: underline; 
+            font-weight: bold; 
+            cursor: pointer;
+        }
+        .page-number.pointer,
+        .arrow-button.pointer {
+            cursor: pointer; 
+        }
+        #rolesContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 40vh; 
+        }
+
+        .pagination {
+            margin-top: auto; 
+        }
+    </style>
 </head>
 <body>
 

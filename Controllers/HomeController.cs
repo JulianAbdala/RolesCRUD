@@ -77,7 +77,10 @@ namespace LoginAdmin.Controllers
 
         }
 
-
+    public IActionResult ModificarUsuario(int idrol) {
+        ViewBag.IdRol = idrol;
+        return View();
+    }
 
 
 //Modificacion de ROLES

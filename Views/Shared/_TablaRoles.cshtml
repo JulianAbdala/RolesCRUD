@@ -8,6 +8,9 @@
         <tr>
             <td>@rol.rol_codRol</td>
             <td>@rol.rol_Nombre</td>
+            <td>
+                <a href="@Url.Action("ModificarUsuario", "HomeController", new { idrol = rol.rol_codRol })">Modificar</a>
+            </td>
         </tr>
     }
 </table>
