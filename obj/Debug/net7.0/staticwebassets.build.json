@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vsuwh2x2JcQtR9WFObJwyWU4ob4OOSMvYGaOLHfrZYA=",
+  "Hash": "MjkrfPE8ZA5JXadc17R0r0iY/gBfKcI7aJ2LlDgEJbY=",
   "Source": "DKtest",
   "BasePath": "_content/DKtest",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\wwwroot\\js\\pagination.js",
+      "SourceId": "DKtest",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\wwwroot\\",
+      "BasePath": "_content/DKtest",
+      "RelativePath": "js/pagination.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pagination.js"
     },
     {
       "Identity": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\wwwroot\\js\\script.js",

@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DKtest
 build_property.RootNamespace = DKtest
-build_property.ProjectDir = c:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\RolesCRUD\
+build_property.ProjectDir = C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\RolesCRUD\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\RolesCRUD
+build_property.MSBuildProjectDirectory = C:\Users\j.abdala\Documents\Proyecto\Nueva carpeta\RolesCRUD
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Admin/Admin.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/CrearRol.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/CrearRol.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhclJvbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/ErrorView.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/ErrorView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/ModificarUsuario.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/ModificarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb2RpZmljYXJVc3VhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/Privacy.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/Welcome.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Home/Welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/Error.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_Error.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_Mensaje.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_Mensaje.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW5zYWplLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_TablaRoles.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_TablaRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYWJsYVJvbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/_ViewImports.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/_ViewStart.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_Layout.cshtml]
+[C:/Users/j.abdala/Documents/Proyecto/Nueva carpeta/RolesCRUD/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pcn44qwhb2

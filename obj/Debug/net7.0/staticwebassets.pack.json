@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\wwwroot\\js\\pagination.js",
+      "PackagePath": "staticwebassets\\js\\pagination.js"
+    },
+    {
       "Id": "C:\\Users\\j.abdala\\Documents\\Proyecto\\Nueva carpeta\\RolesCRUD\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
