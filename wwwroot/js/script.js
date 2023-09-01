@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          document.getElementById("rolesContainer").innerHTML = xhr.responseText;
+          document.getElementById("rolesContainer").innerHTML =
+            xhr.responseText;
         } else {
           console.log("Error:", xhr.status);
         }
@@ -33,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.send();
   });
 });
-
 
 //CREAR ROL
 
@@ -46,10 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
 //Boton ATRÁS
 document.getElementById("volverAtras").addEventListener("click", function () {
-  window.location.href = "welcome.cshtml";
+  window.location.href = "Roles.cshtml";
 });

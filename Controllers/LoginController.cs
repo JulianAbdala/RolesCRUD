@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+
 using System.Text;
 using System.Diagnostics;
 using DKtest.Models;
@@ -10,12 +11,12 @@ namespace LoginAdmin.Controllers
 {
 
     
-    public class AdminController : Controller
+    public class LoginController : Controller
     {
-        private readonly ILogger<AdminController> _logger;
+        private readonly ILogger<LoginController> _logger;
         private readonly IConfiguration _configuration;
 
-        public AdminController(ILogger<AdminController> logger, IConfiguration configuration)
+        public LoginController(ILogger<LoginController> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;

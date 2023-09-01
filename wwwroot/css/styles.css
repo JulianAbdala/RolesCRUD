@@ -61,6 +61,7 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    outline: none;
 }
 button[type="button"] {
     margin-bottom: 20px ;
@@ -70,10 +71,12 @@ button[type="button"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    outline: none;
 }
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+    outline: none;
 }
 
 table {
@@ -136,5 +139,3 @@ p {
     display: block;
     margin-bottom: 10px;
 }
-
-

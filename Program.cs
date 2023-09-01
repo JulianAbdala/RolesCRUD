@@ -86,12 +86,12 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Admin}/{action=Admin}/{id?}");
+    pattern: "{controller=Login}/{action=Admin}/{id?}");
 
 app.MapControllerRoute(
     name: "eliminaruser",
     pattern: "/eliminaruser",
-    defaults: new { controller = "Home", action = "EliminarUser" });
+    defaults: new { controller = "Rol", action = "EliminarUser" });
 
 
 app.Run();

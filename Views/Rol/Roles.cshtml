@@ -1,0 +1,160 @@
+@using DKbase.web
+@{
+    Layout = null; 
+    var mensaje = ViewData["Mensaje"] as string;
+}
+@model List<DKbase.web.cRol>;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <title>Vista Admin</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <style> 
+        /* Estilos para la grilla */
+        table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-top: 20px;
+        }
+
+        table, th, td {
+        border: 1px solid #ccc;
+        }
+
+        th, td {
+        padding: 8px;
+        text-align: left;
+        }
+
+        /* Estilos para la paginación */
+        .pagination {
+        display: flex;
+        margin-top: 20px;
+        }
+
+        .page-number, .arrow-button {
+        margin: 0 5px;
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+
+        .page-number.active {
+        background-color: #007bff;
+        color: #fff;
+        }
+
+        .arrow-button.pointer {
+        cursor: pointer;
+        }
+
+        /* Estilos para el botón de búsqueda */
+        .search-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        }
+
+        input[type="text"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+
+        button {
+        padding: 5px 10px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        }
+
+        button:hover {
+        background-color: #0056b3;
+        outline: none;
+        }
+        .rows-per-page-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rows-per-page-container button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #0056b3;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.rows-per-page-container button:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.rows-per-page-container button:focus {
+  outline: none;
+}
+
+.rows-per-page-container button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.rows-per-page-container button.active:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="#">Inicio</a></li>
+                <li class="navbar-item"><a href="#">Roles</a></li>
+                <li class="navbar-item"><a href="#">Opcion 2</a></li>
+                <li class="navbar-item"><a href="#">Opcion 3</a></li>
+                <li class="navbar-item"><a href="#">Opcion 4</a></li>
+            </ul>
+            <form method="post" action="/admin/logout">
+                @Html.AntiForgeryToken()
+                <button type="submit" formaction="/admin/logout">Cerrar sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <h2>Bienvenido</h2>
+
+    <div>
+        <p>@mensaje</p>
+    </div>
+    <h2>Roles</h2>
+        <form method="get" action="/admin/home/createrol">
+            <button type="submit" class="create-button">Crear</button>
+        </form>
+    <div id="rolesContainer"></div>
+
+
+    <div id="dialog" title="Crear Nuevo Rol" style="display: none;">
+        <form id="crearRolForm">
+            <label for="rolNombre">Nombre del Rol:</label>
+            <input type="text" id="rolNombre" name="rolNombre" required>
+        </form>
+    </div>
+    <script>
+        var roles = @Html.Raw(Json.Serialize(Model));
+    </script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/pagination.js"></script>
+</body>
+</html>
