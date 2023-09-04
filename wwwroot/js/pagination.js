@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   var rolesContainer = document.getElementById("rolesContainer");
-  var rolesPerPage = 5;
+  var rolesPerPage = 10;
   var currentPage = 1;
   var filteredRoles = null;
 
@@ -119,7 +119,30 @@ document.addEventListener("DOMContentLoaded", function () {
     deleteButton.textContent = "Eliminar";
     deleteButton.className = "delete-button";
     deleteButton.addEventListener("click", function () {
-      //lógica para eliminar el rol
+      var popup = document.createElement("div");
+      popup.className = "confirmation-popup";
+
+      // Contenido del popup
+      var message = document.createElement("p");
+      message.textContent = "¿Está seguro que desea eliminar este elemento?";
+      popup.appendChild(message);
+
+      var deleteConfirmButton = document.createElement("button");
+      deleteConfirmButton.textContent = "Eliminar";
+      deleteConfirmButton.addEventListener("click", function () {
+        //lógica para eliminar el rol
+
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(deleteConfirmButton);
+
+      var cancelButton = document.createElement("button");
+      cancelButton.textContent = "Volver Atrás";
+      cancelButton.addEventListener("click", function () {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(cancelButton);
+      document.body.appendChild(popup);
     });
 
     // Agrega los botones

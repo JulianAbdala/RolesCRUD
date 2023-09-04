@@ -15,14 +15,28 @@
     <link rel="stylesheet" href="~/css/styles.css" />
     <style> 
         /* Estilos para la grilla */
-        table {
-        border-collapse: collapse;
-        width: 80%;
-        margin-top: 20px;
-        margin-bottom: 50px;
-        
-        }
+        /* Estilo para la tabla */
+table {
+    width: 80%; /* Ancho total de la tabla */
+    border-collapse: collapse; /* Colapsar los bordes de las celdas */
+    margin-bottom: 20px;
+}
 
+/* Estilo para las celdas del encabezado de columna */
+th {
+    width: 100px; /* Ancho fijo para la columna del encabezado */
+    padding: 8px; /* Espaciado interno del encabezado */
+    border: 1px solid #ccc; /* Borde del encabezado */
+    text-align: left; /* Alineación del texto en el encabezado */
+}
+
+/* Estilo para las celdas de datos */
+td {
+    width: 100px; /* Ancho fijo para las celdas de datos */
+    padding: 8px; /* Espaciado interno de las celdas de datos */
+    border: 1px solid #ccc; /* Borde de las celdas de datos */
+    text-align: left; /* Alineación del texto en las celdas de datos */
+}
         table, th, td {
         border: 1px solid #ccc;
         }
@@ -121,6 +135,30 @@
 
 }
         
+/* Estilos para el popup de confirmación */
+.confirmation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.confirmation-popup p {
+    margin: 0 0 10px;
+}
+
+.confirmation-popup button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
     </style>
 </head>
 <body>
