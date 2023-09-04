@@ -15,7 +15,7 @@ namespace LoginAdmin.Controllers
         }
 
 //Lista de ROLES y Renderizacion de página
-        [HttpGet("/admin/home")]
+        [HttpGet("/admin/rol")]
         public IActionResult Welcome()
         {
             try
@@ -54,13 +54,13 @@ namespace LoginAdmin.Controllers
 
 //CREAR ROL
         
-        [HttpGet("/admin/home/createrol")]
+        [HttpGet("/admin/rol/createrol")]
         public IActionResult CrearRolPage(){                
             return View("CrearRol"); 
         }
         
 
-        [HttpPost("/admin/home/crearrol")]
+        [HttpPost("/admin/rol/crearrol")]
         public IActionResult CrearRol(string rolName)
         {
                     DKbase.Util.InsertarActualizarRol(0, rolName);
@@ -84,7 +84,7 @@ namespace LoginAdmin.Controllers
 
 
 //Modificacion de ROLES
-        [HttpPost("/admin/home/modificarrol")]
+        [HttpPost("/admin/rol/modificarrol")]
         public ActionResult Modificarrol(int idrol, string newName, cRol cRol)
             {
                 DKbase.Util.InsertarActualizarRol(idrol, newName);
@@ -117,7 +117,7 @@ namespace LoginAdmin.Controllers
         
 
 //Buscador de ROLES      
-        [HttpGet("admin/home/buscarrol/{nombre}")]
+        [HttpGet("admin/rol/buscarrol/{nombre}")]
             public IActionResult BuscarRol(string nombre)
             {
                  try

@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var newIdRol = rol.rol_codRol;
       var currentURL = window.location.href;
       var newURL =
-        currentURL.replace(/\/[^/]*$/, "/home/createrol") +
+        currentURL.replace(/\/[^/]*$/, "/rol/createrol") +
         "?idrol=" +
         encodeURIComponent(newIdRol);
 
@@ -237,4 +237,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   updatePagination();
   displayRoles(0, rolesPerPage);
+
+  var rowsPerPageSelect = document.createElement("select");
+  rowsPerPageSelect.id = "rowsPerPage";
+
+  var rowsPerPageOptions = [5, 10, 20];
+
+  rowsPerPageOptions.forEach(function (optionValue) {
+    var option = document.createElement("option");
+    option.value = optionValue;
+    option.textContent = optionValue + " Filas ";
+    if (optionValue === rolesPerPage) {
+      option.selected = true;
+    }
+    rowsPerPageSelect.appendChild(option);
+  });
+
+  rowsPerPageSelect.addEventListener("change", function () {
+    rolesPerPage = parseInt(rowsPerPageSelect.value);
+    currentPage = 1;
+    updatePagination();
+    displayRoles(0, rolesPerPage);
+  });
+
+  var rowsPerPageContainer = document.querySelector(".rows-per-page-container");
+  rowsPerPageContainer.innerHTML = "";
+  rowsPerPageContainer.appendChild(rowsPerPageSelect);
 });

@@ -48,8 +48,9 @@ td {
 
         /* Estilos para la paginación */
         .pagination {
-        display: flex;
+        display: block;
         margin-top: 20px;
+        margin-left: 20px;
         }
 
         .page-number, .arrow-button {
@@ -97,8 +98,8 @@ td {
         outline: none;
         }
         .rows-per-page-container {
-        text-align: center;
         margin-top: 20px;
+        margin-left: 20px;
         }
 
 .rows-per-page-container button {
@@ -162,24 +163,57 @@ td {
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-container">
-            <ul class="navbar-list">
-                <li class="navbar-item"><a href="#">Inicio</a></li>
-                <li class="navbar-item"><a href="#">Roles</a></li>
-                <li class="navbar-item"><a href="#">Opcion 2</a></li>
-                <li class="navbar-item"><a href="#">Opcion 3</a></li>
-                <li class="navbar-item"><a href="#">Opcion 4</a></li>
-            </ul>
-            <form method="post" action="/admin/logout">
-                @Html.AntiForgeryToken()
-                <button type="submit" formaction="/admin/logout">Cerrar sesión</button>
-            </form>
-        </div>
-    </div>
+    <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#">Categorías</a>
+                <div class="dropdown-content">
+                    <a href="#">Categoría 1</a>
+                    <a href="#">Categoría 2</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Historia</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Videojuegos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#">Música</a>
+                <div class="dropdown-content">
+                    <a href="#">Género 1</a>
+                    <a href="#">Género 2</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Cerrar Sesión</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
 
-    <h2>Creación de Roles</h2>
-    <form method="get" action="/admin/home/createrol">
+
+    <h2>Roles</h2>
+    <form method="get" action="/admin/rol/createrol">
         <button type="submit" class="create-button">Crear</button>
     </form>
 

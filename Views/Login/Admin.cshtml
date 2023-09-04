@@ -72,7 +72,7 @@
                 data: { usuario: usuario, contraseña: contraseña },
                 success: function (data) {
                     // Redirige a la vista "Welcome"
-                    window.location.href = "/admin/home";
+                    window.location.href = "/admin/rol";
                 },
                 error: function (xhr, status, error) {
                     var mensajeError = JSON.parse(xhr.responseText).message;
