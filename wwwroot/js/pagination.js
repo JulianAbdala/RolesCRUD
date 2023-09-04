@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updatePagination();
   displayRoles(0, rolesPerPage);
 
-
   roles.forEach(function (rol) {
     var rolRow = document.createElement("tr");
     rolRow.classList.add("role-row");
@@ -99,6 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
     rolNombreCell.textContent = rol.rol_Nombre;
     rolRow.appendChild(rolNombreCell);
 
+    var buttonsContainer = document.createElement("td");
+
+    // Botón "Modificar"
     var modifyButton = document.createElement("button");
     modifyButton.textContent = "Modificar";
     modifyButton.addEventListener("click", function () {
@@ -111,17 +113,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
       window.location.href = newURL;
     });
-    document.body.appendChild(modifyButton);
 
-    var buttonCell = document.createElement("td");
-    buttonCell.appendChild(modifyButton);
-    rolRow.appendChild(buttonCell);
+    // Botón "Eliminar"
+    var deleteButton = document.createElement("button");
+    deleteButton.textContent = "Eliminar";
+    deleteButton.className = "delete-button";
+    deleteButton.addEventListener("click", function () {
+      //lógica para eliminar el rol
+    });
+
+    // Agrega los botones
+    buttonsContainer.appendChild(modifyButton);
+    buttonsContainer.appendChild(deleteButton);
+
+    // Agrega el contenedor de botones a la fila
+    rolRow.appendChild(buttonsContainer);
+
+    // Agrega la fila a la tabla
     table.appendChild(rolRow);
   });
 
   rolesContainer.appendChild(table);
 
-  
   //armado de buscador
   var searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
@@ -161,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-    //filtro de filas por página
+  //filtro de filas por página
   var rowsPerPageButtons = [5, 10, 20];
   var rowsPerPageContainer = document.createElement("div");
   rowsPerPageContainer.classList.add("rows-per-page-container");

@@ -19,6 +19,8 @@
         border-collapse: collapse;
         width: 80%;
         margin-top: 20px;
+        margin-bottom: 50px;
+        
         }
 
         table, th, td {
@@ -67,6 +69,7 @@
         }
 
         button {
+        margin-right: 20px;
         padding: 5px 10px;
         border: none;
         background-color: #007bff;
@@ -77,13 +80,12 @@
         }
 
         button:hover {
-        background-color: #0056b3;
         outline: none;
         }
         .rows-per-page-container {
-  text-align: center;
-  margin-top: 20px;
-}
+        text-align: center;
+        margin-top: 20px;
+        }
 
 .rows-per-page-container button {
   padding: 5px 10px;
@@ -113,6 +115,11 @@
   background-color: #0056b3;
   border-color: #0056b3;
 }
+.delete-button {
+    background-color: red;
+    color: white;
+
+}
         
     </style>
 </head>
@@ -133,15 +140,12 @@
         </div>
     </div>
 
-    <h2>Bienvenido</h2>
+    <h2>Creación de Roles</h2>
+    <form method="get" action="/admin/home/createrol">
+        <button type="submit" class="create-button">Crear</button>
+    </form>
 
-    <div>
-        <p>@mensaje</p>
-    </div>
-    <h2>Roles</h2>
-        <form method="get" action="/admin/home/createrol">
-            <button type="submit" class="create-button">Crear</button>
-        </form>
+
     <div id="rolesContainer"></div>
 
 

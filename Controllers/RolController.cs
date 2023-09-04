@@ -61,22 +61,8 @@ namespace LoginAdmin.Controllers
         
 
         [HttpPost("/admin/home/crearrol")]
-        public IActionResult CrearRol(int rolID, string rolName, cRol cRol)
+        public IActionResult CrearRol(string rolName)
         {
-                if (rolID != 0){
-                    DKbase.Util.InsertarActualizarRol(rolID, rolName);
-                    
-                    var oldName = cRol.rol_Nombre;
-
-                    var modifrol = new cRol
-                    {
-                        rol_codRol = rolID,
-                        rol_Nombre = rolName
-                    };
-
-                    DKbase.Util.RecuperarTodasRoles(oldName).Add(modifrol);
-                }
-                else{
                     DKbase.Util.InsertarActualizarRol(0, rolName);
                     var nuevorol = new cRol
                     {
@@ -85,7 +71,6 @@ namespace LoginAdmin.Controllers
                     };
                     
                     DKbase.Util.RecuperarTodasRoles(rolName).Add(nuevorol);
-                }
                 ViewData["Mensaje"] = "El rol se ha creado exitosamente.";
                 return RedirectToAction("Welcome");
   
@@ -104,16 +89,27 @@ namespace LoginAdmin.Controllers
             {
                 DKbase.Util.InsertarActualizarRol(idrol, newName);
                 
-                var oldName = cRol.rol_Nombre;
+                if (idrol == 0){
+                    DKbase.Util.InsertarActualizarRol(0, newName);
+                    var nuevorol = new cRol
+                    {
+                        rol_codRol = 0,
+                        rol_Nombre = newName
+                    };
+                    
+                    DKbase.Util.RecuperarTodasRoles(newName).Add(nuevorol);
+                }
+                else{
+                    var oldName = cRol.rol_Nombre;
 
-                var modifrol = new cRol
-                {
-                    rol_codRol = idrol,
-                    rol_Nombre = newName
-                };
-
-                DKbase.Util.RecuperarTodasRoles(oldName).Add(modifrol);
-
+                    var modifrol = new cRol
+                    {
+                        rol_codRol = idrol,
+                        rol_Nombre = newName
+                    };
+                    
+                    DKbase.Util.RecuperarTodasRoles(oldName).Add(modifrol);
+                }
                 ViewData["Mensaje"] = "El rol se ha creado exitosamente.";
                 return RedirectToAction("Welcome");
   

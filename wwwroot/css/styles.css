@@ -62,8 +62,11 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+    margin-right: 20px;
+    
 }
 button[type="button"] {
+    margin-right: 20px;
     margin-bottom: 20px ;
     padding: 10px 20px;
     background-color: #007bff;

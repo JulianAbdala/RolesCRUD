@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const crearRolBtn = document.getElementById("crearRolBtn");
   crearRolBtn.addEventListener("click", function () {
-    const rolNombre = document.getElementById("rolName").value;
+    const newName = document.getElementById("newName").value;
 
-    CrearRol(rolNombre);
+    modificarUsuario(newName);
   });
 });
 
 //Boton ATRÁS
 document.getElementById("volverAtras").addEventListener("click", function () {
-  window.location.href = "Roles.cshtml";
+  window.location.href = "/admin/home";
 });

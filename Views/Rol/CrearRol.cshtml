@@ -11,133 +11,76 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
-        body {
+                body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
         }
 
-        .container {
-            max-width: 500px;
-            margin: 20px auto;
+        /* Estilos para el formulario */
+        .rol-form {
+            text-align: center;
             padding: 20px;
-            background-color: #fff;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
         }
 
-        h2 {
-            color: #333;
+        /* Estilos para los elementos del formulario */
+        .form-group {
+            margin-bottom: 15px;
         }
 
         label {
             display: block;
-            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        input[type="text"] {
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            font-size: 14px;
-        }
-
-        button[type="submit"] {
-            padding: 10px 20px;
+        /* Estilo para el botón */
+        #modificarUsuarioBtn {
             background-color: #007bff;
-            border: none;
-            border-radius: 3px;
             color: #fff;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-        /* Estilos para el contenedor de la grilla */
-        .grid-container {
-            max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
-            margin: 0 auto; /* Centra horizontalmente el contenedor */
-            padding: 20px;
-            background-color: #fff;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Estilos para la grilla dentro del contenedor */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px; /* Espacio superior */
-        }
-
-        /* Estilos para las celdas de la grilla */
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
-        }
-
-        /* Estilos para la paginación */
-        .pagination {
-            margin-top: 20px; /* Espacio superior */
-            text-align: center;
-        }
-
-        .pagination span {
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 0 5px;
             cursor: pointer;
-            background-color: #f5f5f5;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            font-size: 14px;
+            outline: none;
         }
 
-        .pagination span.active {
-            background-color: #007bff;
+        #volverAtras {
+            background-color: #a4aab1;
             color: #fff;
-            border: 1px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
         }
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Crear Rol</h2>
-            <form method="post" action="/admin/home/crearrol">
-                <label for="rolNombre">Nombre del Rol:</label>
-                <input type="text" id="rolName" name="rolName">
-                <button type="submit" id="crearRolBtn">Crear Rol</button>
-                <button type="submit" id="volverAtras">Atrás</button>
-            </form>
-        <h2>Modificar nombre de Usuario</h2>
+    <form class="rol-form" method="post" action="/admin/home/modificarrol">
+        <div class="form-group">
+            <input type="text" class="form-control" id="inputIdrol" name="idrol" style="display: none;">
+        </div>
 
-            <form class="rol-form" method="post" action="/admin/home/crearrol">
-                <div class="form-group">
-                    <label for="idrol">ID del Usuario:</label>
-                    <input type="text" class="form-control" id="inputIdrol" name="idrol">
-                </div>
-                <div class="form-group">
-                    <label for="newName">Nuevo Nombre:</label>
-                    <input type="text" class="form-control" id="newName" name="newName" required>
-                </div>
-                <button type="submit" class="btn btn-primary" id="modificarUsuarioBtn">Modificar Nombre</button>
-            </form>
+        <div class="form-group">
+            <label for="newName">Nuevo Nombre:</label>
+            <input type="text" class="form-control" id="newName" name="newName">
+        </div>
+        <button type="submit" class="btn btn-primary" id="modificarUsuarioBtn">Aceptar</button>
+        <button type="button" id="volverAtras">Atrás</button>
+    </form>
     </div>
 </body>
+<script src="~/js/script.js"></script>
 <script>
-    // Obtener el valor del parámetro "idrol" de la URL
+
 var urlParams = new URLSearchParams(window.location.search);
 var idRolValue = urlParams.get("idrol");
 
-// Colocar el valor en el campo de entrada
+
 document.getElementById("inputIdrol").value = idRolValue;
 
 </script>
