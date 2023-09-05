@@ -1,6 +1,6 @@
 //MODIFICAR ROL
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const modificarUsuarioBtn = document.getElementById("modificarUsuarioBtn");
   modificarUsuarioBtn.addEventListener("click", function () {
     const idrol = document.getElementById("idrol").value;
@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     modificarUsuario(idrol, newName);
   });
-});
+});*/
 
 //BUSCAR ROL
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   var buscarForm = document.getElementById("buscarForm");
   buscarForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     xhr.send();
   });
-});
+});*/
 
 //CREAR ROL
 

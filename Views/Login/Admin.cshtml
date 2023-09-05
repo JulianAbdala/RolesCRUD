@@ -5,6 +5,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Bienvenido</title>
     <style>
@@ -31,7 +32,7 @@
         }
 
         .input-field {
-            width: 150px; 
+            width: 150px;
             padding: 5px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -42,46 +43,48 @@
         }
     </style>
 </head>
+
 <body>
 
-<h2>Bienvenido</h2>
+    <h2>Bienvenido</h2>
 
-<div class="input-container">
-    <label class="input-label" for="usuario">Usuario:</label>
-    <input class="input-field" type="text" id="usuario" name="usuario" />
-</div>
-<div class="input-container">
-    <label class="input-label" for="contraseña">Contraseña:</label>
-    <input class="input-field" type="password" id="contraseña" name="contraseña" />
-</div>
-<div>
-    <button type="button" id="btnIniciarSesion">Iniciar sesión</button>
-</div>
-<div id="mensaje"></div>
+    <div class="input-container">
+        <label class="input-label" for="usuario">Usuario:</label>
+        <input class="input-field" type="text" id="usuario" name="usuario" />
+    </div>
+    <div class="input-container">
+        <label class="input-label" for="contraseña">Contraseña:</label>
+        <input class="input-field" type="password" id="contraseña" name="contraseña" />
+    </div>
+    <div>
+        <button type="button" id="btnIniciarSesion">Iniciar sesión</button>
+    </div>
+    <div id="mensaje"></div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $("#btnIniciarSesion").click(function () {
-            var usuario = $("#usuario").val();
-            var contraseña = $("#contraseña").val();
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnIniciarSesion").click(function () {
+                var usuario = $("#usuario").val();
+                var contraseña = $("#contraseña").val();
 
-            $.ajax({
-                type: "POST",
-                url: "/admin/login", // Cambia la URL a la acción de login
-                data: { usuario: usuario, contraseña: contraseña },
-                success: function (data) {
-                    // Redirige a la vista "Welcome"
-                    window.location.href = "/admin/rol";
-                },
-                error: function (xhr, status, error) {
-                    var mensajeError = JSON.parse(xhr.responseText).message;
-                    $("#mensaje").text("Error: " + mensajeError);
-                }
+                $.ajax({
+                    type: "POST",
+                    url: "/admin/login", // Cambia la URL a la acción de login
+                    data: { usuario: usuario, contraseña: contraseña },
+                    success: function (data) {
+                        // Redirige a la vista "Welcome"
+                        window.location.href = "/admin/rol";
+                    },
+                    error: function (xhr, status, error) {
+                        var mensajeError = JSON.parse(xhr.responseText).message;
+                        $("#mensaje").text("Error: " + mensajeError);
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 
 </body>
+
 </html>

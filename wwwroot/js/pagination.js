@@ -1,12 +1,13 @@
 //Parametros de la grilla
 
 document.addEventListener("DOMContentLoaded", function () {
+  //Parámetros iniciales de grilla
   var rolesContainer = document.getElementById("rolesContainer");
   var rolesPerPage = 10;
   var currentPage = 1;
   var filteredRoles = null;
 
-  //armado de grilla
+  //renderización de grilla
   var table = document.createElement("table");
   var headerRow = document.createElement("tr");
   var header1 = document.createElement("th");
@@ -85,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updatePagination();
   displayRoles(0, rolesPerPage);
-
+  // Armado de filas y columnas según el back
   roles.forEach(function (rol) {
     var rolRow = document.createElement("tr");
     rolRow.classList.add("role-row");
@@ -122,20 +123,21 @@ document.addEventListener("DOMContentLoaded", function () {
       var popup = document.createElement("div");
       popup.className = "confirmation-popup";
 
-      // Contenido del popup
+      // Contenido del popup del botón "eliminar"
       var message = document.createElement("p");
       message.textContent = "¿Está seguro que desea eliminar este elemento?";
       popup.appendChild(message);
-
+      
       var deleteConfirmButton = document.createElement("button");
       deleteConfirmButton.textContent = "Eliminar";
+      deleteConfirmButton.className = "delete-popup";
       deleteConfirmButton.addEventListener("click", function () {
-        //lógica para eliminar el rol
+        // poner lógica para eliminar el rol
 
         document.body.removeChild(popup);
       });
       popup.appendChild(deleteConfirmButton);
-
+      // Botón "atrás"
       var cancelButton = document.createElement("button");
       cancelButton.textContent = "Volver Atrás";
       cancelButton.addEventListener("click", function () {
@@ -145,20 +147,23 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.appendChild(popup);
     });
 
-    // Agrega los botones
+    // Renderización de "modificar" y "eliminar"
     buttonsContainer.appendChild(modifyButton);
     buttonsContainer.appendChild(deleteButton);
 
-    // Agrega el contenedor de botones a la fila
+    // Aplicación de los botones en la fila
     rolRow.appendChild(buttonsContainer);
 
-    // Agrega la fila a la tabla
+    // Agrega la fila anterior a la columna de la grilla
     table.appendChild(rolRow);
   });
 
   rolesContainer.appendChild(table);
 
-  //armado de buscador
+  //armado del buscador y renderizacion boton "crear"
+  var createButton = document.createElement("button");
+  createButton.textContent = "Crear";
+  createButton.className = "create-button";
   var searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
   searchInput.setAttribute("placeholder", "Buscar por nombre");
@@ -168,9 +173,11 @@ document.addEventListener("DOMContentLoaded", function () {
   searchContainer.classList.add("search-container");
   searchContainer.appendChild(searchInput);
   searchContainer.appendChild(searchButton);
+  searchContainer.appendChild(createButton);
 
   rolesContainer.parentNode.insertBefore(searchContainer, rolesContainer);
 
+  //Logica input de busqueda
   searchButton.addEventListener("click", function () {
     var searchTerm = searchInput.value.toLowerCase();
     filteredRoles = roles.filter(function (rol) {
@@ -197,7 +204,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-  //filtro de filas por página
+  //Logica Botón "Crear"
+  createButton.addEventListener("click", function () {
+    var newIdRol = 0;
+    var currentURL = window.location.href;
+    var newURL =
+      currentURL.replace(/\/[^/]*$/, "/rol/createrol") +
+      "?idrol=" +
+      encodeURIComponent(newIdRol);
+
+    window.location.href = newURL;
+  });
+  //Botones de filas
   var rowsPerPageButtons = [5, 10, 20];
   var rowsPerPageContainer = document.createElement("div");
   rowsPerPageContainer.classList.add("rows-per-page-container");
@@ -237,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   updatePagination();
   displayRoles(0, rolesPerPage);
-
+  // Lista desplegable de filas por página
   var rowsPerPageSelect = document.createElement("select");
   rowsPerPageSelect.id = "rowsPerPage";
 
