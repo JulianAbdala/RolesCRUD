@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var message = document.createElement("p");
       message.textContent = "¿Está seguro que desea eliminar este elemento?";
       popup.appendChild(message);
-      
+
       var deleteConfirmButton = document.createElement("button");
       deleteConfirmButton.textContent = "Eliminar";
       deleteConfirmButton.className = "delete-popup";

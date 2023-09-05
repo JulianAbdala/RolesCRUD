@@ -60,22 +60,6 @@ namespace LoginAdmin.Controllers
         }
         
 
-        [HttpPost("/admin/rol/crearrol")]
-        public IActionResult CrearRol(string rolName)
-        {
-                    DKbase.Util.InsertarActualizarRol(0, rolName);
-                    var nuevorol = new cRol
-                    {
-                        rol_codRol = 0,
-                        rol_Nombre = rolName
-                    };
-                    
-                    DKbase.Util.RecuperarTodasRoles(rolName).Add(nuevorol);
-                ViewData["Mensaje"] = "El rol se ha creado exitosamente.";
-                return RedirectToAction("Welcome");
-  
-
-        }
 
         public IActionResult ModificarUsuario(int idrol) {
             ViewBag.IdRol = idrol;
